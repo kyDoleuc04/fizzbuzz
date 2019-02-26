@@ -49,11 +49,11 @@ f = int(input("For multiples of what number shall we print 'Fizz'? "))
 b = int(input("For multiples of what number shall we print 'Buzz'? "))
 
 for a in range(1,num+1):
-    if a%f==0:
-        print("Fizz")
+    if  a%f==0 and a%b==0:
+        print("FizzBuzz")
     elif a%b==0:
         print("Buzz")
-    elif a%f==0 and a%b==0:
-        print("FizzBuzz")
+    elif a%f==0:
+        print("Fizz")
     else:
         print(a)
